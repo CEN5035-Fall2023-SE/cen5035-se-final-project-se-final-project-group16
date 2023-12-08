@@ -63,6 +63,7 @@ We've attached the database schema in ta.sql file, run this sql file in mysql da
 NOTE: Mysql databse version should be 8.0.34 and while installing the mysql database, please use 'ta' as username and 'root' as password or else if you have already create the database credentials then update the 13th line of java servlet files, please search for the below line and replace with followed line. 
 
 Existing line - > **Connection connObject = DriverManager.getConnection("jdbc:mysql://127.8.9.0:3306/ta", "ta", "root");**
+
 Replace with -> **Connection connObject = DriverManager.getConnection("jdbc:mysql://localhost:3306/ta", "username", "password");**
 
 In place username please give your database username and in place of password use your database password
